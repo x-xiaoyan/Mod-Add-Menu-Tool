@@ -1,4 +1,5 @@
-# MOD菜单添加工具
+# MAMT (Mod Add Menu Tool)
+MOD菜单添加工具
 
 说明适用于v1.1往后版本
 
@@ -244,6 +245,7 @@ MAMT会先读取应用中文件列表下的所有ini文件，
 例如：可以修改res/icons文件夹中的所有图标为你想要的任意图标，MAMT会自动读取，甚至res/文件夹下除了icons文件夹外的所有文件都可以修改为你想要的图片文件
 
 再例如：修改config/UIConfig.ini文件中的内容，自行设计一个UI代码，只需要保留\[CommandListSetButtonContent\] （既按钮功能和图标块）中的格式，UI样式都可以自定义
+
 
 
 
