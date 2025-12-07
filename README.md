@@ -224,8 +224,7 @@ MAMT会先读取应用中文件列表下的所有ini文件，
 
 添加 \$ActiveCharacter = 1 到搜索到的第一个含有hash=......vb2=......内容的section最后，
 
-删除：
-如果ini中存在以下旧版本UI内容将直接删除此段落后的所有内容
+删除：如果ini中存在以下旧版本UI内容将直接删除此段落后的所有内容    
 ; UI Block    
 ; By: Comilarex    
 ; Modifier: 夕小言    
@@ -249,6 +248,7 @@ MAMT会先读取应用中文件列表下的所有ini文件，
 例如：可以修改res/icons文件夹中的所有图标为你想要的任意图标，MAMT会自动读取，甚至res/文件夹下除了icons文件夹外的所有文件都可以修改为你想要的图片文件
 
 再例如：修改config/UIConfig.ini文件中的内容，自行设计一个UI代码，只需要保留\[CommandListSetButtonContent\] （既按钮功能和图标块）中的格式，UI样式都可以自定义
+
 
 
 
