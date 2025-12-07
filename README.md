@@ -1,4 +1,4 @@
-# MAMT (Mod Add Menu Tool)
+<img width="1928" height="967" alt="pic8" src="https://github.com/user-attachments/assets/ddc85a34-82b1-4060-9c7b-379d30295cdc" /># MAMT (Mod Add Menu Tool)
 MOD菜单添加工具
 
 说明适用于v1.1往后版本
@@ -38,15 +38,21 @@ MOD菜单添加工具
 
 右侧为图标列表区域：点击图标可以将中间区域选中的按钮修改为对应图标；   
 
+拖动调整按钮顺序：
+
 ![拖动按钮调整顺序](/images/pic5.png)
+
+点击文本内容输入修改文本
+
+![输入修改文本](/images/pic6.png)
 
 ### 4\. 点击生成菜单，完成时弹出是否打开文件夹的对话框     
 
-![弹出打开文件夹对话框](/images/pic6.png)    
+![弹出打开文件夹对话框](/images/pic7.png)    
 
 ### 5\. 点击确认时，自动打开MOD目录     
  
-![打开MOD目录](/images/pic7.png)    
+![打开MOD目录](/images/pic8.png)    
 
 
 ## config配置
@@ -239,6 +245,7 @@ MAMT会先读取应用中文件列表下的所有ini文件，
 例如：可以修改res/icons文件夹中的所有图标为你想要的任意图标，MAMT会自动读取，甚至res/文件夹下除了icons文件夹外的所有文件都可以修改为你想要的图片文件
 
 再例如：修改config/UIConfig.ini文件中的内容，自行设计一个UI代码，只需要保留\[CommandListSetButtonContent\] （既按钮功能和图标块）中的格式，UI样式都可以自定义
+
 
 
 
