@@ -226,9 +226,9 @@ MAMT会先读取应用中文件列表下的所有ini文件，
 
 删除：
 如果ini中存在以下旧版本UI内容将直接删除此段落后的所有内容
-; UI Block
-; By: Comilarex
-; Modifier: 夕小言
+; UI Block    
+; By: Comilarex    
+; Modifier: 夕小言    
 
 对比旧的文件中的内容和修改后的内容是否一致，一致则不做文件操作，否则备份旧的文件，将修改后的内容写入新的对应文件；
 
@@ -249,6 +249,7 @@ MAMT会先读取应用中文件列表下的所有ini文件，
 例如：可以修改res/icons文件夹中的所有图标为你想要的任意图标，MAMT会自动读取，甚至res/文件夹下除了icons文件夹外的所有文件都可以修改为你想要的图片文件
 
 再例如：修改config/UIConfig.ini文件中的内容，自行设计一个UI代码，只需要保留\[CommandListSetButtonContent\] （既按钮功能和图标块）中的格式，UI样式都可以自定义
+
 
 
 
