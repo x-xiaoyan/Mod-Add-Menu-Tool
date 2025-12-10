@@ -30,11 +30,24 @@ global $Hearder_height = 104
 global $Footer_width = 166
 global $Footer_height = 62
 ```
+
 Hearder为头部图片（标题）配置
 
 Footer为底部图片（作者）配置
 
 设置为原图宽高大小就行，修改会产生缩放或拉伸
+
+#### 快捷键配置：
+```
+[KeyToggleUI]
+condition = $active
+key = CTRL ALT
+type = hold
+$menu = 1
+...
+```
+
+示例中为快捷键按住Ctrl+Alt呼出UI界面，鼠标左键点击切换
 
 ## 功能配置
 
@@ -103,18 +116,6 @@ if \$Button_SetIcon中为设置对应序号按钮的图标
 filename = res/icons/Icon1.png
 ```
 对应MOD目录下res文件夹下icons文件夹中的Icon1.png文件
-
-#### 设置快捷键：
-```
-[KeyToggleUI]
-condition = $active
-key = CTRL ALT
-type = hold
-$menu = 1
-...
-```
-
-示例中为快捷键按住Ctrl+Alt呼出UI界面，鼠标左键点击切换
 
 #### 设置\$active：
 ```
