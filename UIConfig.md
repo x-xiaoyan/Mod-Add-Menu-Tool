@@ -13,6 +13,7 @@
 ```
 ;设置横向最大按钮数
 global $Button_horizontal_max = 10
+
 ;设置纵向最大按钮数
 global $Button_vertical_max = 0
 ```
@@ -26,6 +27,7 @@ global $Button_vertical_max = 0
 ;头部图片大小
 global $Hearder_wdith = 488
 global $Hearder_height = 104
+
 ;底部图片大小
 global $Footer_width = 166
 global $Footer_height = 62
@@ -45,12 +47,14 @@ condition = $active
 key = CTRL ALT
 type = hold
 $menu = 1
+
 [KeyMouse]
 condition = $menu
 key = VK_LBUTTON
 type = hold
 $mouse_clicked = 1
 $mouse_hold = 1
+
 [KeyMouseRB]
 condition = $menu
 key = VK_RBUTTON
