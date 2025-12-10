@@ -62,7 +62,7 @@ type = hold
 run =  CommandListResetUIPosition
 ```
 
-示例中为快捷键按住Ctrl+Alt呼出UI界面，鼠标左键点击切换，鼠标右键点击重置位置
+默认为快捷键按住Ctrl+Alt呼出UI界面，鼠标左键点击切换，鼠标右键点击重置位置
 
 ## 功能配置
 
