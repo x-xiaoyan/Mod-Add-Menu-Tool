@@ -14,6 +14,8 @@ global $Button_vertical_max = 0
 
 \$Button_horizontal_max为横向能显示的最大按钮数量，超出此数量的按钮会自动换行到下一行
 
+\$Button_vertical_max为纵向能显示的最大按钮数量，超出此数量时会自动分页到下一页
+
 #### 添加按钮：
 ```
 ;添加按钮
@@ -74,7 +76,7 @@ filename = res/icons/Icon1.png
 #### 设置快捷键：
 ```
 [KeyToggleUI]
-condition = $ActiveCharacter
+condition = $active
 key = CTRL ALT
 type = hold
 $menu = 1
@@ -83,7 +85,7 @@ $menu = 1
 
 示例中为快捷键按住Ctrl+Alt呼出UI界面，鼠标左键点击切换
 
-#### 设置\$ActiveCharacter：
+#### 设置\$active：
 ```
 ;MARK:TextureOverrideVB----------------------------------------------------------
 ; a5eac582 ----------------------------
@@ -94,10 +96,9 @@ vb2 = Resourcea5eac582Blend
 handling = skip
 draw = 14461, 0
 $active = 1
-$ActiveCharacter = 1
 ```
-***注意：\$ActiveCharacter必须设置！！！***
+***注意：\$active必须设置！！！***
 
-设置\$ActiveCharacter的目的是对应角色在场时才能激活对应菜单，因为\$ActiveCharacter默认为0既非激活状态，如果不设置就算按住快捷键也不会显示菜单
+设置\$active的目的是对应角色在场时才能激活对应菜单，因为\$active默认为0既非激活状态，如果不设置就算按住快捷键也不会显示菜单
 
-需要像如上示例\$active一样在角色的某个hash内将\$ActiveCharacter设置为1
+需要像如上示例在角色的某个hash内将\$active设置为1
