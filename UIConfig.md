@@ -39,15 +39,26 @@ Footer为底部图片（作者）配置
 
 #### 快捷键配置：
 ```
+
 [KeyToggleUI]
 condition = $active
 key = CTRL ALT
 type = hold
 $menu = 1
-...
+[KeyMouse]
+condition = $menu
+key = VK_LBUTTON
+type = hold
+$mouse_clicked = 1
+$mouse_hold = 1
+[KeyMouseRB]
+condition = $menu
+key = VK_RBUTTON
+type = hold
+run =  CommandListResetUIPosition
 ```
 
-示例中为快捷键按住Ctrl+Alt呼出UI界面，鼠标左键点击切换
+示例中为快捷键按住Ctrl+Alt呼出UI界面，鼠标左键点击切换，鼠标右键点击重置位置
 
 ## 功能配置
 
