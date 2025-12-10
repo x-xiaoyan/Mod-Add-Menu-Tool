@@ -1,20 +1,51 @@
 
-# UI代码配置教学：
+# UI代码配置教学
 
-#### 设置按钮：
+一般只有基础配置部分是需要手动配置的，功能配置部分是应用会自动完成的
+
+当然，自行手动修改也是可以的
+
+## 基础配置
+
+配置后会同步到生成的UIBlock.ini文件中
+
+#### 按钮配置：
 ```
-;设置按钮总数
-global $Button_amount = 4
 ;设置横向最大按钮数
 global $Button_horizontal_max = 10
 ;设置纵向最大按钮数
 global $Button_vertical_max = 0
 ```
-\$Button_amount为要设置的按钮总数
 
 \$Button_horizontal_max为横向能显示的最大按钮数量，超出此数量的按钮会自动换行到下一行
 
-\$Button_vertical_max为纵向能显示的最大按钮数量，超出此数量时会自动分页到下一页
+\$Button_vertical_max为纵向能显示的最大按钮数量，超出此数量时会自动分页到下一页，默认为0不启用，不会产生分页
+
+#### 图片配置：
+```
+;头部图片大小
+global $Hearder_wdith = 488
+global $Hearder_height = 104
+;底部图片大小
+global $Footer_width = 166
+global $Footer_height = 62
+```
+Hearder为头部图片（标题）配置
+
+Footer为底部图片（作者）配置
+
+设置为原图宽高大小就行，修改会产生缩放拉伸
+
+## 功能配置
+
+配置后会被应用操作替换掉，不依靠应用的话可以自行操作
+
+#### 设置按钮：
+```
+;设置按钮总数
+global $Button_amount = 4
+```
+\$Button_amount为要设置的按钮总数
 
 #### 添加按钮：
 ```
