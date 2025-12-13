@@ -15,7 +15,7 @@
 ## 使用说明
 ### 1\. 打开应用，界面如下
 
-![打开应用](/images/pic1.png?t=1765083965196)   
+![打开应用](images/pic1.png?t=1765083965196)   
 
 
 ### 2\. 点击选择目录，导入要添加菜单的MOD目录（文件夹），存在UIBlock.ini时会弹出是否加载已有配置的对话框     
@@ -24,15 +24,15 @@
 
 如果点击取消，会加载MOD目录中的所有ini文件中的快捷键配置     
 
-![弹出加载已有配置的对话框](/images/pic2.png?t=1765083965196)       
+![弹出加载已有配置的对话框](images/pic2.png?t=1765083965196)       
 
 加载已有配置：
 
-![加载已有配置](/images/pic3.png?t=1765083965196)    
+![加载已有配置](images/pic3.png?t=1765083965196)    
 
 加载默认配置：
 
-![加载默认配置](/images/pic4.png?t=1765083965196)    
+![加载默认配置](images/pic4.png?t=1765083965196)    
 
 ### 3\. 设置按钮内容，点击选中按钮调整对应按钮内容     
 
@@ -44,19 +44,19 @@
 
 拖动调整按钮顺序：
 
-![拖动按钮调整顺序](/images/pic5.png?t=1765083965196)
+![拖动按钮调整顺序](images/pic5.png?t=1765083965196)
 
 点击文本内容输入修改文本
 
-![输入修改文本](/images/pic6.png?t=1765083965196)
+![输入修改文本](images/pic6.png?t=1765083965196)
 
 ### 4\. 点击生成菜单，完成时弹出是否打开文件夹的对话框     
 
-![弹出打开文件夹对话框](/images/pic7.png?t=1765083965196)    
+![弹出打开文件夹对话框](images/pic7.png?t=1765083965196)    
 
 ### 5\. 点击确认时，自动打开MOD目录     
  
-![打开MOD目录](/images/pic8.png?t=1765083965196)    
+![打开MOD目录](images/pic8.png?t=1765083965196)    
 
 
 ## config配置
@@ -81,15 +81,15 @@
 
 pink:  [UITheme/pink](UITheme/pink)    
 
-![pink](/UITheme/pink/preview.png?t=1765083965196)    
+![pink](UITheme/pink/preview.png?t=1765083965196)    
 
 blue:  [UITheme/blue](UITheme/blue)    
 
-![blue](/UITheme/blue/preview.png?t=1765083965196)      
+![blue](UITheme/blue/preview.png?t=1765083965196)      
 
 dark:  [UITheme/dark](UITheme/dark)    
 
-![dark](/UITheme/dark/preview.png?t=1765083965196)   
+![dark](UITheme/dark/preview.png?t=1765083965196)   
 
 ## 进阶玩法
 
@@ -165,6 +165,7 @@ MAMT会先读取应用中文件列表下的所有ini文件，
 例如：可以修改res/icons文件夹中的所有图标为你想要的任意图标，MAMT会自动读取，甚至res/文件夹下除了icons文件夹外的所有文件都可以修改为你想要的图片文件
 
 再例如：修改config/UIConfig.ini文件中的内容，自行设计一个UI代码，只需要保留\[CommandListSetButtonContent\] （既按钮功能和图标块）中的格式，UI样式都可以自定义
+
 
 
 
