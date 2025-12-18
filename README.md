@@ -1,11 +1,8 @@
 # MAMT (Mod Add Menu Tool)
 ### MOD菜单添加工具
 
-***更新至v1.1版本***    
-极其强大的全新版本！！！支持按钮文本编辑！！！    
-真正的生产力！！！    
-菜单UI风格整体重构，应用界面所见即所得。   
-全面兼容旧版本内容读取。    
+***更新至v1.2版本***    
+图标和文本图片进行了拆分
 
 ## 目录
 - [使用说明](#使用说明)
@@ -77,19 +74,25 @@
 
 详细UI代码配置教学看这里： [UIConfig.md](UIConfig.md)    
 
-新增3套参考主题：
+提供了4套参考主题：
 
-pink:  [UITheme/pink](UITheme/pink)    
+pink:  [UITheme/new/pink](UITheme/new/pink)    
 
-![pink](UITheme/pink/preview.png?t=1765083965196)    
+![pink](UITheme/new/pink/preview.png?t=1765083965196)    
 
-blue:  [UITheme/blue](UITheme/blue)    
+blue:  [UITheme/new/blue](UITheme/new/blue)    
 
-![blue](UITheme/blue/preview.png?t=1765083965196)      
+![blue](UITheme/new/blue/preview.png?t=1765083965196)      
 
-dark:  [UITheme/dark](UITheme/dark)    
+dark:  [UITheme/new/dark](UITheme/new/dark)    
 
-![dark](UITheme/dark/preview.png?t=1765083965196)   
+![dark](UITheme/new/dark/preview.png?t=1765083965196)   
+
+retro（怀旧主题）:  [UITheme/new/retro](UITheme/new/retro)    
+
+![retro](UITheme/new/retro/preview.png?t=1765083965196)    
+
+旧版本参考主题看这里：[UITheme/v1.1](UITheme/v1.1)    
 
 ## 进阶玩法
 
@@ -165,6 +168,7 @@ MAMT会先读取应用中文件列表下的所有ini文件，
 例如：可以修改res/icons文件夹中的所有图标为你想要的任意图标，MAMT会自动读取，甚至res/文件夹下除了icons文件夹外的所有文件都可以修改为你想要的图片文件
 
 再例如：修改config/UIConfig.ini文件中的内容，自行设计一个UI代码，只需要保留\[CommandListSetButtonContent\] （既按钮功能和图标块）中的格式，UI样式都可以自定义
+
 
 
 
