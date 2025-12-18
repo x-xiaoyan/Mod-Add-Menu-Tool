@@ -110,6 +110,9 @@ if $Button_number == 1
 		ps-t100 = ResourceButton_Icon1
 	endif
 	;按钮文本：发型
+    if $Button_SetText
+        ps-t100 = ResourceButton_Text1
+    endif
 	...
 endif
 ```
@@ -131,6 +134,8 @@ if \$Button_SetIcon中为设置对应序号按钮的图标
 filename = res/icons/Icon1.png
 ```
 对应MOD目录下res文件夹下icons文件夹中的Icon1.png文件
+
+\$Button_SetText中为设置按钮1文本为ResourceButton_Text1，同上图标内容也需要引入相应资源
 
 #### 设置\$active：
 ```
