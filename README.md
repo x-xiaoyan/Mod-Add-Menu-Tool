@@ -108,7 +108,8 @@ retro（怀旧主题）:  [UITheme/new/retro](UITheme/new/retro)
 
 ![retro](UITheme/new/retro/preview.png?t=1765083965196)    
 
-旧版本参考主题看这里：[UITheme/v1.1](UITheme/v1.1)    
+旧版本参考主题看这里：    
+v1.1版本：[UITheme/v1.1](UITheme/v1.1)    
 
 ## 进阶玩法
 
@@ -184,6 +185,7 @@ MAMT会先读取应用中文件列表下的所有ini文件，
 例如：可以修改res/icons文件夹中的所有图标为你想要的任意图标，MAMT会自动读取，甚至res/文件夹下除了icons文件夹外的所有文件都可以修改为你想要的图片文件
 
 再例如：修改config/UIConfig.ini文件中的内容，自行设计一个UI代码，只需要保留\[CommandListSetButtonContent\] （既按钮功能和图标块）中的格式，UI样式都可以自定义
+
 
 
 
