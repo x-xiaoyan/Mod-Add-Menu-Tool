@@ -194,21 +194,50 @@
 
 提供了4套参考主题：
 
-pink:  [UITheme/new/pink](UITheme/new/pink)    
-
-![pink](UITheme/new/pink/preview.png?t=1765083965196)    
-
-blue:  [UITheme/new/blue](UITheme/new/blue)    
-
-![blue](UITheme/new/blue/preview.png?t=1765083965196)      
-
-dark:  [UITheme/new/dark](UITheme/new/dark)    
-
-![dark](UITheme/new/dark/preview.png?t=1765083965196)   
-
-retro（怀旧主题）:  [UITheme/new/retro](UITheme/new/retro)    
-
-![retro](UITheme/new/retro/preview.png?t=1765083965196)    
+<table>
+  <tr>
+    <th>
+      pink
+    </th>
+    <th>
+      blue
+    </th>
+    <th>
+      dark
+    </th>
+    <th>
+      retro（怀旧主题）
+    </th>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="UITheme/new/pink/preview.png?raw=true" alt="pink">
+    </td>
+    <td align="center">
+      <img src="UITheme/new/blue/preview.png?raw=true" alt="blue">
+    </td>
+    <td align="center">
+      <img src="UITheme/new/dark/preview.png?raw=true" alt="dark">
+    </td>
+    <td align="center">
+      <img src="UITheme/new/retro/preview.png?raw=true" alt="retro">
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <a href="UITheme/new/pink">UITheme/new/pink</a>
+    </td align="center">
+    <td align="center">
+      <a href="UITheme/new/blue">UITheme/new/blue</a>
+    </td>
+    <td align="center">
+      <a href="UITheme/new/dark">UITheme/new/dark</a>
+    </td>
+    <td align="center">
+      <a href="UITheme/new/retro">UITheme/new/retro</a>
+    </td>
+  </tr>
+</table>
 
 旧版本参考主题看这里：    
 v1.1版本：[UITheme/v1.1](UITheme/v1.1)    
@@ -309,49 +338,4 @@ MAMT会先读取应用中文件列表里的所有ini文件，
 ## 声明
 
 本软件仅用于学习交流，禁止用于商业用途，否则后果自负。
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
