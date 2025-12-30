@@ -70,9 +70,13 @@ run =  CommandListResetUIPosition
 
 #### 设置按钮：
 ```
+global $Button_text_show = 1
+...
 ;设置按钮总数
 global $Button_amount = 4
 ```
+\$Button_text_show为是否要显示按钮文本，默认为1显示
+
 \$Button_amount为要设置的按钮总数
 
 #### 添加按钮：
