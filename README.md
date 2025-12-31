@@ -12,7 +12,7 @@
 - [使用说明](#使用说明)
 - [常见问题](#常见问题)
 - [config配置](#config配置)
-- [进阶玩法](#进阶玩法)
+- [进阶内容](#进阶内容)
 - [声明](#声明)
 
 ## 使用说明
@@ -241,11 +241,9 @@
 旧版本参考主题看这里：    
 v1.1版本：[UITheme/v1.1](UITheme/v1.1)    
 
-## 进阶玩法
+## 进阶内容
 
-***注意：请尽量不要修改注释中的内容***
-
-在进行进阶玩法前我们需要先了解MAMT各操作对文件都做了什么：
+***在进阶玩法前我们需要先了解MAMT各操作对文件都做了什么：***    
 
 ### 读取ini
 
@@ -269,45 +267,131 @@ MAMT就将从MOD目录中读取到的所有文件路径添加到应用文件列�
 
 MAMT会先读取应用中文件列表里的所有ini文件，    
 
-添加或替换 namespace = 应用设置的内容或MOD目录路径，（选择文件模式时，将会删除选择文件中的namespace内容，文件列表中有UIBlock.ini将会删除UIBlock.ini文件）    
+添加或替换/删除 namespace = 应用设置的内容或MOD目录路径，（选择文件模式时，将会删除选择文件中的namespace内容，文件列表中有UIBlock.ini将会删除UIBlock.ini文件）    
+```
+namespace = E:\GameTools\XXMI\ZZMI\Mods\character\ellen\艾莲-FES时装\BassistEllenFull
+```
 
 添加 \$active = 1 到搜索到的第一个含有hash=......vb2=......内容的Section最后，    
+```
+[TextureOverrideEllenBodyBlend]
+hash = ed9cb852
+handling = skip
+vb2 = ResourceEllenBodyBlend
+if DRAW_TYPE == 1
+	vb0 = ResourceEllenBodyPosition
+	draw = 104662, 0
+endif
+$active = 1
+```
 
-查询是否存在\[Constants\],\[Present\]之外的Section重名，以及除global $active以外的全局变量重名，    
-
-如果重名则在原名上添加_Reapeat后缀，    
+查询 是否存在\[Constants\]和\[Present\]之外的Section重名，以及除global $active以外的全局变量重名，如果重名则在原名上添加_Reapeat后缀，      
+```
+global persist $swapkey0_Repeat = 0
+...
+[ResourceDiffuse_Repeat]
+filename = Diffuse.dds
+```
 
 删除：如果ini中存在以下旧版本UI内容将直接删除此段落后的所有内容    
-; UI Block    
-; By: Comilarex    
-; Modifier: 夕小言    
+```
+; UI Block
+; By: Comilarex
+; Modifier: 夕小言
+```
 
-删除：选择目录模式时会删除;MARK:UIBlockStart...;UIBlockEnd间已存在的原菜单内容（选择文件模式时，为替换中间的所有内容为新菜单内容）    
-;MARK:UIBlockStart    
+删除：选择目录模式时会删除如下段落间已存在的原菜单内容（选择文件模式时，为替换中间的所有内容为新菜单内容）    
+```
+;MARK:UIBlockStart ----------------------------------------------------------
 ...    
-;UIBlockEnd    
+;UIBlockEnd ----------------------------------------------------------
+```
 
 对比旧的文件中的内容和修改后的内容是否一致，一致则不做文件操作，否则备份旧的文件，将修改后的内容写入新的对应文件；    
 
 之后MAMT会读取应用config路径下的UIConfig.ini文件内容，    
 
 添加 namespace = 应用设置的内容或MOD目录路径，（选择文件模式时，将不会添加namespance）    
+```
+[TextureOverride_VB_a5eac582_上身_Position]
+hash = e0269fbf
+vb0 = Resourcea5eac582Position
+vb2 = Resourcea5eac582Blend
+handling = skip
+draw = 14461, 0
+$active = 1
+```
 
 替换 global \$Button_amount = 应用中的按钮总数，    
+```
+;设置按钮总数
+global $Button_amount = 4
+```
 
 替换 global \$Button_horizontal_max = 应用中的横向最大按钮数，    
+```
+;设置横向最大按钮数
+global $Button_horizontal_max = 10
+```
 
 替换 global \$Button_text_show = 应用中是显示文本（否勾选字体内容），    
+```
+global $Button_text_show = 1
+```
 
 替换 global \$Button_text_ratio = 根据应用中设置的字体大小计算的字体高度比例，    
+```
+global $Button_text_ratio = 0.4
+```
 
 替换 ;添加按钮 至 \$Button_number = 0 中的内容为按钮总数个对应个的run = CommandListAddButton，    
+```
+;添加按钮
+run = CommandListAddButton
+run = CommandListAddButton
+...
+$Button_number = 0
+```
 
-替换 \[CommandListSetButtonContent\] 中的所有内容为应用解析对应的按钮数据，    
+替换 \[CommandListSetButtonContent\] 中的所有内容为应用解析对应的按钮数据（$Button_SetText中内容只在勾选字体时才添加），    
+```
+[CommandListSetButtonContent]
+if $Button_number == 1
+    ;设置按钮功能
+    if $Button_SetCondition
+        if $earring < 2
+            $earring = $earring + 1
+        else
+            $earring = 1
+        endif
+    endif
+    ;设置按钮图标：Earrings
+    if $Button_SetIcon
+        ps-t100 = ResourceButton_Icon1
+    endif
+    ;按钮文本：耳环
+    if $Button_SetText
+        ps-t100 = ResourceButton_Text1
+    endif
+    ...
+endif
+```
 
 替换 ;引入按钮图标资源 至 下一个非空内容中的所有内容为\[ResourceButton_图片文件名\]filename = res/icons/图片文件名.文件类型，    
+```
+;引入按钮图标资源
+[ResourceButton_Icon1]
+filename = res/icons/Icon1.png
+...
+```
 
 如果勾选字体将同时添加 ;引入按钮文本资源 至 下一个非空内容中的所有内容为\[ResourceButton_图片文件名\]filename = res/texts/图片文件名.文件类型，    
+```
+;引入按钮文本资源
+[ResourceButton_Text1]
+filename = res/texts/Text1.png
+...
+```
 
 对比旧的UIBlock.ini文件中的内容和修改后的内容是否一致，一致则不做文件操作，否则备份旧的UIBlock.ini文件，将修改后的内容写入新的UIBlock.ini文件；    
 
@@ -333,10 +417,15 @@ MAMT会先读取应用中文件列表里的所有ini文件，
 
 再例如：修改config/UIConfig.ini文件中的内容，自行设计一个UI代码，只需要保留\[CommandListSetButtonContent\] （既按钮功能和图标及文本块）中的格式，UI样式都可以自定义，MAMT会自动生成\[CommandListSetButtonContent\]中的按钮内容
 
+UI代码可以参考： [UI代码配置教学](UIConfig.md)    
+
+***注意：请尽量不要修改注释中的内容***
+
 
 ## 声明
 
 本软件仅用于学习交流，禁止用于商业用途，否则后果自负。
+
 
 
 
