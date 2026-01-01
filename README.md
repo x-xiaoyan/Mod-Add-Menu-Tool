@@ -246,7 +246,7 @@ ini中开头配置帮助图片路径和大小
 ```
 ; 配置图片资源
 [ResourceUIHelp]
-filename = res/Help.png
+filename = Help.png
 
 [Constants]
 ; 配置图片尺寸 (单位：像素)
@@ -459,6 +459,7 @@ UI代码可以参考： [UI代码配置教学](UIConfig.md)
 ## 声明
 
 本软件仅用于学习交流，禁止用于商业用途，否则后果自负。
+
 
 
 
