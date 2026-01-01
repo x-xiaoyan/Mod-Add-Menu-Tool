@@ -18,7 +18,7 @@
 ## 使用说明
 ### 1\. 打开应用，界面如下
 
-![打开应用](images/pic1.png?raw=true)   
+![打开应用](images/pic1.png?raw=false)   
 
 ### 2\. 点击选择目录/文件，导入要添加菜单的MOD目录/主ini文件，存在UIBlock内容时会弹出是否加载已有配置的对话框     
 
@@ -28,21 +28,21 @@
 
 如果点击取消，会加载MOD目录中的所有ini文件中的快捷键配置     
 
-![弹出加载已有配置的对话框](images/pic2.png?raw=true)       
+![弹出加载已有配置的对话框](images/pic2.png?raw=false)       
 
 加载已有配置：
 
-![加载已有配置](images/pic3.png?raw=true)    
+![加载已有配置](images/pic3.png?raw=false)    
 
 加载默认配置：
 
-![加载默认配置](images/pic4.png?raw=true)    
+![加载默认配置](images/pic4.png?raw=false)    
 
 * #### 选择文件
 
 流程同上  
 
-![选择文件](images/pic5.png?raw=true)    
+![选择文件](images/pic5.png?raw=false)    
 
 
 ### 3\. 设置菜单内容，点击选中按钮调整对应按钮内容     
@@ -134,26 +134,26 @@
 
 拖动调整按钮顺序：
 
-![拖动按钮调整顺序](images/pic6.png?raw=true)
+![拖动按钮调整顺序](images/pic6.png?raw=false)
 
 点击文本内容输入修改文本：
 
-![输入修改文本](images/pic7.png?raw=true)
+![输入修改文本](images/pic7.png?raw=false)
 
 操作字体栏可控制文本是否显示，以及修改字体、大小、粗细等。
 
 修改字体：
 
-![修改字体](images/pic8.png?raw=true)
+![修改字体](images/pic8.png?raw=false)
 
 关闭按钮文本：
 
-![不显示按钮文本](images/pic9.png?raw=true)
+![不显示按钮文本](images/pic9.png?raw=false)
 
 
 ### 4\. 点击生成菜单，完成时弹出是否打开文件夹的对话框     
 
-![弹出打开文件夹对话框](images/pic10.png?raw=true)  
+![弹出打开文件夹对话框](images/pic10.png?raw=false)  
 
 
 ## 常见问题    
@@ -210,16 +210,16 @@
   </tr>
   <tr>
     <td align="center">
-      <img src="UITheme/new/pink/preview.png?raw=true" alt="pink">
+      <img src="UITheme/new/pink/preview.png?raw=false" alt="pink">
     </td>
     <td align="center">
-      <img src="UITheme/new/blue/preview.png?raw=true" alt="blue">
+      <img src="UITheme/new/blue/preview.png?raw=false" alt="blue">
     </td>
     <td align="center">
-      <img src="UITheme/new/dark/preview.png?raw=true" alt="dark">
+      <img src="UITheme/new/dark/preview.png?raw=false" alt="dark">
     </td>
     <td align="center">
-      <img src="UITheme/new/retro/preview.png?raw=true" alt="retro">
+      <img src="UITheme/new/retro/preview.png?raw=false" alt="retro">
     </td>
   </tr>
   <tr>
@@ -248,7 +248,7 @@
   </tr>
   <tr>
     <td align="center">
-      <img src="UITheme/new/helpmix/preview.png?raw=true" alt="helpmix" width="50%">
+      <img src="UITheme/new/helpmix/preview.png?raw=false" alt="helpmix" width="50%">
     </td>
   </tr>
   <tr>
@@ -445,6 +445,7 @@ UI代码可以参考： [UI代码配置教学](UIConfig.md)
 ## 声明
 
 本软件仅用于学习交流，禁止用于商业用途，否则后果自负。
+
 
 
 
