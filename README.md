@@ -191,7 +191,7 @@
 
  [UI代码配置教学](UIConfig.md)    
 
-这里提供了4套参考主题（直接替换配置目录config/res文件夹中的配置文件）：    
+这里提供了5套参考主题（直接替换配置目录config/res文件夹中的配置文件）：    
 
 <table>
   <tr>
@@ -234,6 +234,26 @@
     </td>
     <td align="center">
       <a href="UITheme/new/retro">UITheme/new/retro</a>
+    </td>
+  </tr>
+</table>
+
+新增helpmix主题，可自定义左侧帮助图片
+
+<table>
+  <tr>
+    <th>
+      helpmix（帮助图片合并主题）
+    </th>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="UITheme/new/helpmix/preview.png?raw=true" alt="helpmix" width="50%">
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <a href="UITheme/new/helpmix">UITheme/new/helpmix</a>
     </td>
   </tr>
 </table>
@@ -425,6 +445,7 @@ UI代码可以参考： [UI代码配置教学](UIConfig.md)
 ## 声明
 
 本软件仅用于学习交流，禁止用于商业用途，否则后果自负。
+
 
 
 
